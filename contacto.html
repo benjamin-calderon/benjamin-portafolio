@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Benjamin Calderón</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <span class="brand-title">Benjamin Calderón</span>
+        <span class="brand-subtitle">Programación - Práctica Profesional (Chile)</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">Menú</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="quien_soy.html" class="nav-link">Quién Soy</a></li>
+        <li><a href="estudios.html" class="nav-link">Estudios</a></li>
+        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="content-section">
+      <h1 class="section-title">Contacto</h1>
+
+      <div class="contact-grid">
+        <div class="contact-lines">
+          <div class="personal-data">
+            <p><strong>Ubicación:</strong> Chile</p>
+            <p><strong>Correo:</strong> <a href="mailto:benjamin.calderon.villalon@gmail.com">benjamin.calderon.villalon@gmail.com</a></p>
+            <p><strong>Situación:</strong> Práctica Profesional de Programación</p>
+          </div>
+
+          <div class="contact-links-list">
+            <a href="https://wa.me/56982897727">WhatsApp</a>
+            <a href="https://github.com">GitHub</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="form-block" action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensaje enviado.');">
+          <div>
+            <label for="nombre" class="input-label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="input-box" required>
+          </div>
+          <div>
+            <label for="email" class="input-label">Correo</label>
+            <input type="email" id="email" name="email" class="input-box" required>
+          </div>
+          <div>
+            <label for="mensaje" class="input-label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="textarea-box" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Benjamin Calderón - Técnico en Programación - Chile</p>
+      <div class="footer-social-row">
+        <a href="https://wa.me/56982897727">WhatsApp</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://github.com">GitHub</a>
+        <a href="mailto:benjamin.calderon.villalon@gmail.com">Correo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
